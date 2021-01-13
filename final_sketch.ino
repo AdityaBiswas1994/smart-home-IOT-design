@@ -192,7 +192,7 @@ void rfid_read()
   
   if(strID=="EB:FE:EF:66")
   {
-    Serial.println("Urmisha Das Adhikary entered the house");
+    Serial.println(" "Your name goes here" entered the house");
     digitalWrite(A4,HIGH);
     delay(1000);
     digitalWrite(A4,LOW);
@@ -202,7 +202,7 @@ void rfid_read()
   }
   if(strID=="B0:D7:C1:80")
   {
-    Serial.println("Meghna Kundu enterted the house");
+    Serial.println(" "Your name goes here" enterted the house");
     digitalWrite(A1,HIGH);
     delay(1000);
     digitalWrite(A1,LOW);
@@ -212,7 +212,7 @@ void rfid_read()
   }
   if(strID=="DB:B4:EC:66")
   {
-    Serial.println("Arpita Mandal entered the house");
+    Serial.println(" "Your name goes here" entered the house");
     digitalWrite(A2,HIGH);
     delay(1000);
     digitalWrite(A2,LOW);
@@ -222,7 +222,7 @@ void rfid_read()
   }
   if(strID=="DB:43:02:99")
   {
-    Serial.println("Aditya Bikram Biswas entered the house");
+    Serial.println(" "Your name goes here" entered the house");
     digitalWrite(A3,HIGH);
     delay(1000);
     digitalWrite(A3,LOW);
