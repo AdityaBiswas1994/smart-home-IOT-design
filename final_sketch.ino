@@ -13,7 +13,7 @@ SoftwareSerial bluetooth(2,3); // RX, TX
 MFRC522 rfid(SS_PIN, RST_PIN);
 MFRC522::MIFARE_Key key;
 SoftwareSerial ser(0,1);  // rx,tx wifi
-String apiKey = "K78D2VKV644PKZOU";
+String apiKey = "K78D2VKV644PKZOU"; //thingspeak api key
 
 
 int count=0;
@@ -190,7 +190,7 @@ void rfid_read()
   }
   strID.toUpperCase();
   
-  if(strID=="EB:FE:EF:66")
+  if(strID=="EB:FE:EF:66") //RFID card number
   {
     Serial.println(" "Your name goes here" entered the house");
     digitalWrite(A4,HIGH);
@@ -200,7 +200,7 @@ void rfid_read()
     rfid.PCD_StopCrypto1();
     return;
   }
-  if(strID=="B0:D7:C1:80")
+  if(strID=="B0:D7:C1:80") //RFID card number
   {
     Serial.println(" "Your name goes here" enterted the house");
     digitalWrite(A1,HIGH);
@@ -210,7 +210,7 @@ void rfid_read()
     rfid.PCD_StopCrypto1();
     return;
   }
-  if(strID=="DB:B4:EC:66")
+  if(strID=="DB:B4:EC:66") //RFID card number
   {
     Serial.println(" "Your name goes here" entered the house");
     digitalWrite(A2,HIGH);
@@ -220,7 +220,7 @@ void rfid_read()
     rfid.PCD_StopCrypto1();
     return;
   }
-  if(strID=="DB:43:02:99")
+  if(strID=="DB:43:02:99") //RFID card number
   {
     Serial.println(" "Your name goes here" entered the house");
     digitalWrite(A3,HIGH);
